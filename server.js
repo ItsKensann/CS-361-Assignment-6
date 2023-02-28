@@ -37,6 +37,10 @@ app.get('/guide', (req, res, next) => {
   res.status(200).sendFile(__dirname + "/public/guide.html")
 })
 
+app.get('/1', (req, res, next) => {
+  res.status(200).sendFile(__dirname + "/helpMessages.json")
+})
+
 app.listen(port, () => {
   console.log("Listening on port 3000")
 })
